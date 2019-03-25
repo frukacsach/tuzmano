@@ -1,0 +1,3 @@
+[0325/164228.959:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\settings.dat: A hozzáférés megtagadva. (0x5)
+[0325/164228.963:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: A pipe használata befejezõdött. (0x6D)
+[0325/164228.964:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\settings.dat: A hozzáférés megtagadva. (0x5)

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/main.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="./turnjs/turn.js"></script>
+
+  </head>
+  <body style="
+    overflow-y: scroll;">
+<!-- HEADER -->
+    <div class="konyhead">
+
+			<div id="flipbook">
+				<div><img src="./img/friss_demon.png"></img> </div>
+
+			<div><img src="./img/demonk.png"></img> </div>
+			<div><img src="./img/demonk2.png"></img> </div>
+
+
+			<div><img src="./img/ny1.png"></img> </div>
+			<div>
+				<img src="./img/nyul.png" id="nyul"></img>
+				<img style="width:1890px;height:2776;" src="./img/n.gif" id="n-gif" class="hidden"></img>
+			</div>
+
+			<div><img src="./img/r1.png"></img> </div>
+					<div><img src="./img/r2.png"></img> </div>
+			<div><img src="./img/r3.png"></img> </div>
+
+			<div>
+				<img src="./img/1.png" id="rem" ></img>
+				<img style="width:1890px;height:2776;" src="./img/r.gif" id="r-gif" class="hidden"></img>
+			</div>
+
+			<div><img src="./img/l1.png"></img> </div>
+			<div>
+				<img src="./img/hark.png" id="lanyok" ></img>
+				<img style="width:1890px;height:2776;" src="./img/h.gif" id="h-gif" class="hidden"></img>
+			</div>
+
+			<div><img src="./img/cat1.png"></img> </div>
+			<div><img src="./img/cat2.png"></img> </div>
+			<div><img src="./img/cat3.png"></img> </div>
+			<div>
+				<img src="./img/cat.png" id="cat" ></img>
+				<img style="width:1890px;height:2776;" src="./img/c.gif" id="c-gif" class="hidden"></img>
+			</div>
+
+			<div><img src="./img/s1.png"></img> </div>
+			<div><img src="./img/s2.png"></img> </div>
+			<div><img src="./img/s3.png"></img> </div>
+			<div>
+				<img src="./img/pav.png" id="pav" ></img>
+				<img style="width:1890px;height:2776;" src="./img/p.gif" id="p-gif" class="hidden"></img>
+			</div>
+
+			<div><img src="./img/k1.png"></img> </div>
+			<div><img src="./img/k2.png"></img> </div>
+			<div>
+				<img src="./img/k3.png"></img>
+				<img style="width:1890px;height:2776;" src="./img/borz.gif" id="borz-gif" class="hidden"></img>
+			</div>
+			<div><img src="./img/tarti.png"></img> </div>
+			<div><img src="./img/hatso.png"></img> </div>
+			</div>
+
+		</div>
+	  </div>
+
+
+
+
+<!-- CONTENT -->
+
+  <script type="text/javascript">
+ $( document ).ready(function() {
+	$("#flipbook").turn({
+		width: 1700,
+		height: 1248,
+		autoCenter: true
+	});
+
+  $("body").on("click touch","#nyul",function(){
+		if(!$("#nyul").hasClass("hidden")) {
+			$("#nyul").addClass("hidden");
+			$("#n-gif").removeClass("hidden");
+		}
+	})
+	$("body").on("click touch","#n-gif",function(){
+		if(!$("#n-gif").hasClass("hidden")) {
+			$("#n-gif").addClass("hidden");
+			$("#nyul").removeClass("hidden");
+		}
+	})
+  $("body").on("click touch","#rem",function(){
+		if(!$("#rem").hasClass("hidden")) {
+			$("#rem").addClass("hidden");
+			$("#r-gif").removeClass("hidden");
+		}
+	})
+	$("body").on("click touch","#r-gif",function(){
+		if(!$("#r-gif").hasClass("hidden")) {
+			$("#r-gif").addClass("hidden");
+			$("#rem").removeClass("hidden");
+		}
+	})
+
+  $("body").on("click touch","#lanyok",function(){
+    if(!$("#lanyok").hasClass("hidden")) {
+      $("#lanyok").addClass("hidden");
+      $("#h-gif").removeClass("hidden");
+    }
+  })
+  $("body").on("click touch","#h-gif",function(){
+    if(!$("#h-gif").hasClass("hidden")) {
+      $("#h-gif").addClass("hidden");
+      $("#lanyok").removeClass("hidden");
+    }
+  })
+
+  $("body").on("click touch","#cat",function(){
+    if(!$("#cat").hasClass("hidden")) {
+      $("#cat").addClass("hidden");
+      $("#c-gif").removeClass("hidden");
+    }
+  })
+  $("body").on("click touch","#c-gif",function(){
+    if(!$("#c-gif").hasClass("hidden")) {
+      $("#c-gif").addClass("hidden");
+      $("#cat").removeClass("hidden");
+    }
+  })
+
+  $("body").on("click touch","#pav",function(){
+    if(!$("#pav").hasClass("hidden")) {
+      $("#pav").addClass("hidden");
+      $("#p-gif").removeClass("hidden");
+    }
+  })
+  $("body").on("click touch","#p-gif",function(){
+    if(!$("#p-gif").hasClass("hidden")) {
+      $("#p-gif").addClass("hidden");
+      $("#pav").removeClass("hidden");
+    }
+  })
+
+  $("body").on("click touch","#borz",function(){
+    if(!$("#borz").hasClass("hidden")) {
+      $("#borz").addClass("hidden");
+      $("#borz-gif").removeClass("hidden");
+    }
+  })
+  $("body").on("click touch","#borz-gif",function(){
+    if(!$("#borz-gif").hasClass("hidden")) {
+      $("#borz-gif").addClass("hidden");
+      $("#borz").removeClass("hidden");
+    }
+  })
+
+})
+</script>
+</html>
